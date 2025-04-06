@@ -11,3 +11,8 @@ test('returns number for  single value', () => {
 test('returns the sum of two comma -separeted numbers', () => {
     expect(add("1,5")).toBe(6);
 });
+
+test('handles new lines as delimiters', () => {
+    expect(add("1\n2,3")).toBe(6);
+});
+
