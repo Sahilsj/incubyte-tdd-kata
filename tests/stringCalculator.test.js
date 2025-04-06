@@ -7,3 +7,7 @@ test('returns 0 for an empty string', () => {
 test('returns number for  single value', () => {
     expect(add("1")).toBe(1);
 });
+
+test('returns the sum of two comma -separeted numbers', () => {
+    expect(add("1,5")).toBe(6);
+});
