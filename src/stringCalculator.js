@@ -1,6 +1,6 @@
 function add(numbers) {
     if (numbers === "") return 0;
-    return Number(numbers);
+    return numbers.split(",").reduce((sum, num) => sum + Number(num),0);
 }
 
 module.exports = { add };
